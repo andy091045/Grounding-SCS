@@ -52,11 +52,12 @@ public class PlayerMovement2 : MonoBehaviour
         //移動
         if (playerType == PlayerType.A)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                velocity = new Vector2(0, 1) * speed;
-                audiosource.PlayOneShot(impact);
-            }
+            velocity = new Vector2(0, Input.GetAxisRaw("AVertical")) * speed;
+            // if (Input.GetKeyDown(KeyCode.Space))
+            // {
+            //     velocity = new Vector2(0, 1) * speed;
+            //     audiosource.PlayOneShot(impact);
+            // }
 
             if (Input.GetKeyUp(KeyCode.Space))
             {
