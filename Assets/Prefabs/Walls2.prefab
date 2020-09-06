@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5456815624319120466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5456815624319120493}
+  - component: {fileID: 5456815624319120494}
+  - component: {fileID: 5456815624319120495}
+  - component: {fileID: 5456815624319120492}
+  m_Layer: 0
+  m_Name: Walls2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5456815624319120493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456815624319120466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.384562, z: -2.209562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &5456815624319120494
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456815624319120466}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 2
+--- !u!114 &5456815624319120495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456815624319120466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51c0926d0c1db942b4bbaf3318bffd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPoint: {fileID: 1655918068164908381, guid: 0da2ac863b856a44aa4740e76920c3ab, type: 3}
+  cow: {fileID: 9138553816207975649, guid: f8e7d4bdf9633a34ea9ab54ed11dd2f5, type: 3}
+  cow2: {fileID: 8922213001317291214, guid: fcac32c1685cb3f40a46a68faf423e6d, type: 3}
+  dog_catcher: {fileID: 4683930354734427351, guid: bd51d9658c2e4a340917f82bb24aa7d6, type: 3}
+  eagle: {fileID: 2830381233429430452, guid: 1d9156ca63ef86647a7c885d19cb2172, type: 3}
+  street_light: {fileID: 6621598096664671837, guid: f55b4d09eb2d89c4295fd18bca1f2cf7, type: 3}
+  outer_cage: {fileID: 7459297554737618043, guid: 9094590c6cded234fb6b802cae0cbfe3, type: 3}
+  sign: {fileID: 3273636986168104626, guid: 23760169a4742644f8d80308a1ceed58, type: 3}
+  telephone_pole: {fileID: 8024159283791597905, guid: 6d795364701e3024c9dc7c3e1b94ee64, type: 3}
+  tree1: {fileID: 7457451853411693056, guid: adc7ebac568de994a8bc0e2b32b56b32, type: 3}
+  traffic_light: {fileID: 1674775739189240810, guid: c3cff87a177bb294bb26cd921062a3e5, type: 3}
+  optionColor: {fileID: 4807775582656711564, guid: 6c950d7111e2fd84aa358d7983cfdf8d, type: 3}
+  optionColor1: {fileID: 5482703206736946274, guid: b21a7b9930cd9724282ba07d7dfb7726, type: 3}
+  optionColor2: {fileID: 5770435262575786249, guid: b95c33326d48f274e8e144b7f6de54c3, type: 3}
+  optionColor3: {fileID: 1707079967254402038, guid: bf2de41bd101eb049860a938ae9515e8, type: 3}
+  optionColor4: {fileID: 7642421325101393925, guid: 2593b20763b8ae34aa4e19c0d7803405, type: 3}
+  optionColor5: {fileID: 3636098798625084857, guid: 3cc8908389297984a8b643fb04c56688, type: 3}
+  optionColor6: {fileID: 5737239909750841491, guid: 606dd55573c320949b47b5a56be990a2, type: 3}
+  optionColor7: {fileID: 6501106376812261334, guid: 9e83039ac609ab941b9cd66106ea5170, type: 3}
+  optionColor8: {fileID: 4892191376228767479, guid: 9218c6cfa30b8ab46bfa1239a43963a6, type: 3}
+  main: {fileID: 5456815624319120466}
+  answer: 0
+  wall2: {fileID: 1266117865874962167, guid: f416414d4eccaac4db5ffb5a37378578, type: 3}
+  backGround: {fileID: 4277490330813639463, guid: 2a1b6e87b5968284a9fa8d028a8370b0, type: 3}
+  backGround2: {fileID: 0}
+  obstacle: {fileID: 8613022327790084207, guid: 4bbf978e935c91f4fb8699da84f7fecc, type: 3}
+--- !u!114 &5456815624319120492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456815624319120466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad917f28e63bd14fa3a5b7743ddc045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gapTime: 10
+  increaseSpeed: 0.1
+  wallProuducts: {fileID: 5456815624319120466}
+  speed: 10

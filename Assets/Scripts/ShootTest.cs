@@ -13,14 +13,12 @@ public class ShootTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         pos = new Vector2(1.0f, 0.0f);
         // playerMovement = gameObject.GetComponent<PlayerMovement>();
         if (playerMovement != null)
         {
             playerMovement.shoot += Shoot;
         }
-
     }
 
     private void OnDestroy()
@@ -30,12 +28,10 @@ public class ShootTest : MonoBehaviour
     }
     void Shoot(int n)
     {
-
         if (n == 1)
         {
             GameObject NewBox = Instantiate(box);
             NewBox.GetComponent<Rigidbody2D>().velocity = pos * speed;
         }
-
     }
 }

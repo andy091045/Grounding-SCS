@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1266117865874962167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266117865874962166}
+  - component: {fileID: 1266117865874962163}
+  - component: {fileID: 1266117865874962160}
+  - component: {fileID: 1266117865874962161}
+  m_Layer: 0
+  m_Name: Wall3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266117865874962166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266117865874962167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.384562, z: -2.209562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1266117865874962163
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266117865874962167}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1266117865874962160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266117865874962167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad917f28e63bd14fa3a5b7743ddc045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gapTime: 10
+  increaseSpeed: 0.1
+  wallProuducts: {fileID: 1266117865874962167}
+  speed: 10
+--- !u!114 &1266117865874962161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266117865874962167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a08a33b748db143afed54bcc1ba84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPoint: {fileID: 1655918068164908381, guid: 0da2ac863b856a44aa4740e76920c3ab, type: 3}
+  Artificial_satellite: {fileID: 6729225542421445335, guid: 48744feabb2871e40aec721257a01be8, type: 3}
+  cat_and_women: {fileID: 5914506900077348, guid: fd7bbfe2b6f2889468ced8dd03abf37f, type: 3}
+  dog: {fileID: 6019964451316863250, guid: 8da9b58498bb3a34d8842ea98f27bb65, type: 3}
+  frog: {fileID: 5249433327597196751, guid: 7e6f674ed442dd34f87d00ff0064e6e2, type: 3}
+  long_cat: {fileID: 2332569840600484429, guid: 20e96d33be23d814aabd5604e3312335, type: 3}
+  mars: {fileID: 4736058400148219092, guid: 3253e12286a5d6a44a677e0466610f66, type: 3}
+  moon: {fileID: 6054547435789063242, guid: d001f11a35f62284bb97b548e5b1996d, type: 3}
+  potato: {fileID: 2086094541936904361, guid: 86ff539e1b796d84a8339e256265297d, type: 3}
+  wtf: {fileID: 8022789924512373666, guid: 319fa84adc7178c4e8ce736ba07959a1, type: 3}
+  optionColor: {fileID: 4807775582656711564, guid: 6c950d7111e2fd84aa358d7983cfdf8d, type: 3}
+  optionColor1: {fileID: 5482703206736946274, guid: b21a7b9930cd9724282ba07d7dfb7726, type: 3}
+  optionColor2: {fileID: 5770435262575786249, guid: b95c33326d48f274e8e144b7f6de54c3, type: 3}
+  optionColor3: {fileID: 1707079967254402038, guid: bf2de41bd101eb049860a938ae9515e8, type: 3}
+  optionColor4: {fileID: 7642421325101393925, guid: 2593b20763b8ae34aa4e19c0d7803405, type: 3}
+  optionColor5: {fileID: 3636098798625084857, guid: 3cc8908389297984a8b643fb04c56688, type: 3}
+  optionColor6: {fileID: 5737239909750841491, guid: 606dd55573c320949b47b5a56be990a2, type: 3}
+  optionColor7: {fileID: 6501106376812261334, guid: 9e83039ac609ab941b9cd66106ea5170, type: 3}
+  optionColor8: {fileID: 4892191376228767479, guid: 9218c6cfa30b8ab46bfa1239a43963a6, type: 3}
+  main: {fileID: 1266117865874962167}
+  answer: 0
+  wall2: {fileID: 1266117865874962167}
+  backGround: {fileID: 5170888727670368065, guid: 5ef3ae55c2786164e9e0fb2b7c1d3f7e, type: 3}
+  backGround2: {fileID: 5170888727670368065, guid: 5ef3ae55c2786164e9e0fb2b7c1d3f7e, type: 3}
+  obstacle: {fileID: 4950936247797977718, guid: 338ee047b54d93e49b45893daa26598c, type: 3}

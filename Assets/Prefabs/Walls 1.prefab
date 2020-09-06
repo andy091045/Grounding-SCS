@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8176390514710043179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8176390514710043182}
+  - component: {fileID: 8176390514710043177}
+  - component: {fileID: 8176390514710043176}
+  - component: {fileID: 8176390514710043183}
+  m_Layer: 0
+  m_Name: Walls 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8176390514710043182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176390514710043179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.3845615, z: -2.2095618}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8176390514710043177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176390514710043179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467e486abb8bb974493f32cc63962a81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPoint: {fileID: 1655918068164908381, guid: 0da2ac863b856a44aa4740e76920c3ab, type: 3}
+  cage: {fileID: 1576809026402659939, guid: eb872e98ff3dde14fa1f953d4c3700c0, type: 3}
+  cage2: {fileID: 3546515122141094502, guid: ec8c4d2ef10aff248aa6aa9b3dfdb2a9, type: 3}
+  cage3: {fileID: 3174976101566799582, guid: 30b0870149a88a0408491e84f126c7c2, type: 3}
+  caw: {fileID: 8513267581100927155, guid: 92eee5c20e0478f43b64e6436ff52c5d, type: 3}
+  controler: {fileID: 1663073161123649530, guid: 2d52bd8a317088b4d8aa6cef61e2bf87, type: 3}
+  fan: {fileID: 246134050133919105, guid: a4aa0067927265e43a328ea93f045816, type: 3}
+  the_light: {fileID: 8786758540101197486, guid: 5927a39df00399647ab4a80f96d909ac, type: 3}
+  moniter: {fileID: 589790333359118403, guid: 1d2818da3c6e7a4458dcd87738a6eadd, type: 3}
+  petri_dish: {fileID: 6388757609068056703, guid: 84684a46f856f7748816faaceb13f68c, type: 3}
+  tube: {fileID: 5655559327695030632, guid: d209f926e06d9164a88971051e4a4f69, type: 3}
+  optionColor: {fileID: 6599968215032656848, guid: 9d52eacc18662eb4a84a98225479c0f0, type: 3}
+  optionColor1: {fileID: 2194515050880347036, guid: 2242aba9eef41124fad80a9ae13b7ad2, type: 3}
+  optionColor2: {fileID: 1467709889531174367, guid: ceb7e6add7145ee45b0225a17b438537, type: 3}
+  optionColor3: {fileID: 123387717759169856, guid: d890a837fb9e4854f9384622c9304c3e, type: 3}
+  optionColor4: {fileID: 7387035759170476166, guid: c3546d0523f41534d8037b35c3e9ff0e, type: 3}
+  optionColor5: {fileID: 2040199889437691969, guid: 4ebeee29f31f48247b3a80a9d249e2ff, type: 3}
+  optionColor6: {fileID: 7919329282420985601, guid: 8b8910b5f5a246147ae515183a3a1a1b, type: 3}
+  optionColor7: {fileID: 8616651615445975932, guid: c4543589ab65bd64ba5c5b6a456da1af, type: 3}
+  optionColor8: {fileID: 8276961875643632356, guid: cdf593e45eb38fc42bd8f056bbd30faa, type: 3}
+  main: {fileID: 8176390514710043179}
+  answer: 0
+  wall2: {fileID: 5456815624319120466, guid: 11d98face8e6e6d4199c2d751c9d0fb9, type: 3}
+  backGround: {fileID: 5170888727670368065, guid: 5ef3ae55c2786164e9e0fb2b7c1d3f7e, type: 3}
+  backGround2: {fileID: 4277490330813639463, guid: 2a1b6e87b5968284a9fa8d028a8370b0, type: 3}
+  obstacle: {fileID: 8613022327790084207, guid: 4bbf978e935c91f4fb8699da84f7fecc, type: 3}
+--- !u!114 &8176390514710043176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176390514710043179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad917f28e63bd14fa3a5b7743ddc045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gapTime: 5
+  increaseSpeed: 0.1
+  wallProuducts: {fileID: 8176390514710043179}
+  speed: 5
+--- !u!50 &8176390514710043183
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176390514710043179}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 2

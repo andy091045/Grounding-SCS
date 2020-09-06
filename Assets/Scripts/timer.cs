@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class timer : MonoBehaviour
 {
+    public GameObject canvas;
     float timer1 = 0.0f;
     void Start()
     {
+        canvas = GameObject.Find("Canvas");
         //暫停用的程式碼
         // StartCoroutine(TimePause());
     }
@@ -15,7 +17,13 @@ public class timer : MonoBehaviour
     void Update()
     {
         timer1 += Time.deltaTime;
-        Debug.Log("時間" + timer1);
+        // Debug.Log("時間" + timer1);
+    }
+    public void End()
+    {
+        float f = timer1;
+
+        canvas.GetComponent<printTime>().printf(f);
     }
 
     // IEnumerator TimePause()

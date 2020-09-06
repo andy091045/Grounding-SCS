@@ -12,7 +12,7 @@ public class gravity : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("進來了");
+        Debug.Log("重力反轉");
         player.GetComponent<Rigidbody2D>().gravityScale = -10;
         player.GetComponent<PlayerMovement2>().speed = -10.0f;
 
@@ -20,6 +20,7 @@ public class gravity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player2");
         rigid = gameObject.GetComponent<Rigidbody2D>();
         velocity = new Vector2(-1f, 0) * speed;
         rigid.velocity = velocity;
