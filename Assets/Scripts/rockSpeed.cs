@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 
 public class rockSpeed : MonoBehaviour
@@ -23,7 +24,10 @@ public class rockSpeed : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject player = GameObject.Find("Player2");
-        player.GetComponent<PlayerMovement2>().Dead();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            GameObject player = GameObject.Find("Player2");
+            player.GetComponent<PlayerMovement2>().Dead();
+        }
     }
 }

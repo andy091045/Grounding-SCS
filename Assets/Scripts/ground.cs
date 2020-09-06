@@ -17,7 +17,10 @@ public class ground : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject player = GameObject.Find("Player2");
-        player.GetComponent<PlayerMovement2>().Dead();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            GameObject player = GameObject.Find("Player2");
+            player.GetComponent<PlayerMovement2>().Dead();
+        }
     }
 }

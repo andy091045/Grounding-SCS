@@ -72,7 +72,7 @@ public class PlayerMovement2 : MonoBehaviour
         gameObject.GetComponent<Animator>().enabled = false;
         velocity = new Vector2(-1, 1f) * speed;
         gameObject.GetComponent<SpriteRenderer>().sprite = p2;
-        gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 2f);
+        // gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 2f);
         canvas.SetActive(true);
         time_i = (int)timer;
         canvas.GetComponent<printTime>().printf(time_i);

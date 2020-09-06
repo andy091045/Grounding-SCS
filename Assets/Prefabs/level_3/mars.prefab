@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5728188808602802247}
   - component: {fileID: 5221357872960684236}
   - component: {fileID: 8407437747200047012}
+  - component: {fileID: -3353035508185135276}
   m_Layer: 0
   m_Name: mars
   m_TagString: Untagged
@@ -189,3 +190,15 @@ PolygonCollider2D:
       - {x: 8.62, y: -2.74}
       - {x: 8.66, y: -2.69}
       - {x: 8.66, y: -2.56}
+--- !u!114 &-3353035508185135276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4736058400148219092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

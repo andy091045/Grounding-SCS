@@ -66,7 +66,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51c0926d0c1db942b4bbaf3318bffd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorPoint: {fileID: 1655918068164908381, guid: 0da2ac863b856a44aa4740e76920c3ab, type: 3}
+  topics:
+  - {fileID: 1451202145854939349, guid: 35a021ee83562934ebf582ec6f621d98, type: 3}
+  - {fileID: 4829423874199854160, guid: 84b7ebeb3d6d4334a9afde90832ace15, type: 3}
+  - {fileID: 1577311917601848779, guid: e8e100498ba459341b6f067b700a3288, type: 3}
+  colorPoint: {fileID: 1497338852802794683, guid: 44f5304a0ea1acd48abbdcea364d2c16, type: 3}
   cow: {fileID: 9138553816207975649, guid: f8e7d4bdf9633a34ea9ab54ed11dd2f5, type: 3}
   cow2: {fileID: 8922213001317291214, guid: fcac32c1685cb3f40a46a68faf423e6d, type: 3}
   dog_catcher: {fileID: 4683930354734427351, guid: bd51d9658c2e4a340917f82bb24aa7d6, type: 3}
@@ -90,8 +94,14 @@ MonoBehaviour:
   answer: 0
   wall2: {fileID: 1266117865874962167, guid: f416414d4eccaac4db5ffb5a37378578, type: 3}
   backGround: {fileID: 4277490330813639463, guid: 2a1b6e87b5968284a9fa8d028a8370b0, type: 3}
-  backGround2: {fileID: 0}
+  backGround2: {fileID: 2156079619257857383, guid: 3b8ff2064e053804aa79f94aa73f16ab, type: 3}
   obstacle: {fileID: 8613022327790084207, guid: 4bbf978e935c91f4fb8699da84f7fecc, type: 3}
+  topic1: {fileID: 1451202145854939349, guid: 35a021ee83562934ebf582ec6f621d98, type: 3}
+  topic2: {fileID: 4829423874199854160, guid: 84b7ebeb3d6d4334a9afde90832ace15, type: 3}
+  topic3: {fileID: 1577311917601848779, guid: e8e100498ba459341b6f067b700a3288, type: 3}
+  level: 2
+  topic: 0
+  player: {fileID: 5130238023270993846, guid: e1293b8f8c2fcea45bb3eb97759556e5, type: 3}
 --- !u!114 &5456815624319120492
 MonoBehaviour:
   m_ObjectHideFlags: 0

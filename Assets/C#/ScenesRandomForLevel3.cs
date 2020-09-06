@@ -6,7 +6,7 @@ public class ScenesRandomForLevel3 : MonoBehaviour
 {
     List<GameObject> pillarsUp = new List<GameObject>();       //柱子隨機
     List<GameObject> pillarsDown = new List<GameObject>();
-    List<string> topics = new List<string>();                      //題目的物件
+    public List<GameObject> topics = new List<GameObject>();                      //題目的物件
     List<GameObject> answerColor = new List<GameObject>();        //選項顏色的物件List
     GameObject[] options = new GameObject[2];
     public GameObject colorPoint;
@@ -19,7 +19,7 @@ public class ScenesRandomForLevel3 : MonoBehaviour
     public GameObject moon;
     public GameObject potato;
     public GameObject wtf;
-     public GameObject optionColor;
+    public GameObject optionColor;
     public GameObject optionColor1;
     public GameObject optionColor2;
     public GameObject optionColor3;
@@ -37,7 +37,13 @@ public class ScenesRandomForLevel3 : MonoBehaviour
     public GameObject backGround;
     public GameObject backGround2;
     public GameObject obstacle;
-    
+    public int level = 3;
+    public int topic = 0;
+    public GameObject topic1;
+    public GameObject topic2;
+    public GameObject topic3;
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,9 +67,9 @@ public class ScenesRandomForLevel3 : MonoBehaviour
         pillarsUp.Add(potato);
         pillarsUp.Add(wtf);
 
-        topics.Add("紅+黃");
-        topics.Add("紅+綠");
-        topics.Add("黃+綠");
+        topics.Add(topic1);
+        topics.Add(topic2);
+        topics.Add(topic3);
 
         answerColor.Add(optionColor);
         answerColor.Add(optionColor1);
@@ -89,7 +95,12 @@ public class ScenesRandomForLevel3 : MonoBehaviour
             {
                 Destroy(main.transform.GetChild(i).gameObject);
             }
-            if(count == 10)
+            childCount = GameObject.Find("Player2").transform.childCount;
+            for (int i = 0; i < childCount; i++)
+            {
+                Destroy(GameObject.Find("Player2").transform.GetChild(i).gameObject);
+            }
+            if (count == 10)
             {
                 Instantiate(wall2, new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
                 Instantiate(backGround2, new Vector3(17, 0, 0), new Quaternion(0, 0, 0, 0));
@@ -103,86 +114,86 @@ public class ScenesRandomForLevel3 : MonoBehaviour
 
     void ScenesBuild()
     {
-        
-            ran = new System.Random(System.Guid.NewGuid().GetHashCode());
 
-            GameObject ab;
-            ab = Instantiate(colorPoint, new Vector3(-10f, 0, 0), new Quaternion(0, 90, 0, 0));          //生成顏色顯示
-            ab.transform.parent = main.transform;
+        ran = new System.Random(System.Guid.NewGuid().GetHashCode());
 
-            int i;
-            float x = 10f;
-            for (i = 0; i < 3; i++)
+        GameObject ab;
+        ab = Instantiate(colorPoint, new Vector3(5f, 0, 0), new Quaternion(0, 90, 0, 0));          //生成顏色顯示
+        ab.transform.parent = main.transform;
+
+        int i;
+        float x = 10f;
+        for (i = 0; i < 3; i++)
+        {
+            int upOrDown = ran.Next(2);
+            if (upOrDown == 0)                   //上方障礙物
             {
-                int upOrDown = ran.Next(2);
-                if(upOrDown == 0)                   //上方障礙物
+                int pillarNum = ran.Next(9);
+                GameObject a;
+                int rotate = ran.Next(2);
+                if (rotate == 0)
                 {
-                    int pillarNum = ran.Next(9);
-                    GameObject a;
-                    int rotate = ran.Next(2);
-                    if(rotate == 0)
-                    {
-                        a = Instantiate(pillarsUp[pillarNum], new Vector3(x, 3f, 0), new Quaternion(0, 90, 0, 0));          //生成柱子
-                    }
-                    else
-                    {
-                        a = Instantiate(pillarsUp[pillarNum], new Vector3(x, 3f, 0), new Quaternion(0, 0, 0, 0));
-                    }
-                    a.transform.parent = main.transform;
+                    a = Instantiate(pillarsUp[pillarNum], new Vector3(x, 3f, 0), new Quaternion(0, 90, 0, 0));          //生成柱子
                 }
                 else
                 {
-                    int pillarNum = ran.Next(9);
-                    GameObject a;
-                    int rotate = ran.Next(2);
-                    if(rotate == 0)
-                    {
-                        a = Instantiate(pillarsDown[pillarNum], new Vector3(x, -3f, 0), new Quaternion(0, 90, 0, 0));          //生成柱子
-                    }
-                    else
-                    {
-                        a = Instantiate(pillarsDown[pillarNum], new Vector3(x, -3f, 0), new Quaternion(0, 0, 0, 0));
-                    }
-                    a.transform.parent = main.transform;
+                    a = Instantiate(pillarsUp[pillarNum], new Vector3(x, 3f, 0), new Quaternion(0, 0, 0, 0));
                 }
-                x += 10f;
-            }
-
-            int topic = ran.Next(3);
-            //int topic = Random.Range(0,3);                                                   //生成題目
-
-            options[0] = (answerColor[topic]);
-            int optionWrong = ran.Next(3);
-            while (optionWrong == topic)                                                         //另外一個選項和答案重複就一直隨機到沒重複
-            {
-                optionWrong = ran.Next(3);
-            }
-            options[1] = (answerColor[optionWrong]);                                              //兩個選項新增完成
-
-            int firstOption = ran.Next(2);
-            if (firstOption == 0)                                                                //上面的是答案
-            {
-                GameObject a;
-                a = Instantiate(options[0], new Vector3(40, 2.5f, 0), new Quaternion(0, 90, 0, 0));
                 a.transform.parent = main.transform;
-                GameObject b;
-                b = Instantiate(options[1], new Vector3(40, -2.5f, 0), new Quaternion(0, 90, 0, 0));
-                b.transform.parent = main.transform;
-                answer = 0;
             }
-            else                                                                                //下面的是答案
+            else
             {
+                int pillarNum = ran.Next(9);
                 GameObject a;
-                a = Instantiate(options[1], new Vector3(40, 2.5f, 0), new Quaternion(0, 90, 0, 0));
+                int rotate = ran.Next(2);
+                if (rotate == 0)
+                {
+                    a = Instantiate(pillarsDown[pillarNum], new Vector3(x, -3f, 0), new Quaternion(0, 90, 0, 0));          //生成柱子
+                }
+                else
+                {
+                    a = Instantiate(pillarsDown[pillarNum], new Vector3(x, -3f, 0), new Quaternion(0, 0, 0, 0));
+                }
                 a.transform.parent = main.transform;
-                GameObject b;
-                b = Instantiate(options[0], new Vector3(40, -2.5f, 0), new Quaternion(0, 90, 0, 0));
-                b.transform.parent = main.transform;
-                answer = 1;
             }
-            GameObject c; 
-            c = Instantiate(obstacle, new Vector3(40, 0, 0), new Quaternion(0, 0, 0, 0));
-            c.transform.parent = main.transform;
-            count++;
+            x += 10f;
+        }
+
+        topic = ran.Next(3);
+        //int topic = Random.Range(0,3);                                                   //生成題目
+
+        options[0] = (answerColor[topic]);
+        int optionWrong = ran.Next(3);
+        while (optionWrong == topic)                                                         //另外一個選項和答案重複就一直隨機到沒重複
+        {
+            optionWrong = ran.Next(3);
+        }
+        options[1] = (answerColor[optionWrong]);                                              //兩個選項新增完成
+
+        int firstOption = ran.Next(2);
+        if (firstOption == 0)                                                                //上面的是答案
+        {
+            GameObject a;
+            a = Instantiate(options[0], new Vector3(40, 2.5f, 0), new Quaternion(0, 90, 0, 0));
+            a.transform.parent = main.transform;
+            GameObject b;
+            b = Instantiate(options[1], new Vector3(40, -2.5f, 0), new Quaternion(0, 90, 0, 0));
+            b.transform.parent = main.transform;
+            answer = 0;
+        }
+        else                                                                                //下面的是答案
+        {
+            GameObject a;
+            a = Instantiate(options[1], new Vector3(40, 2.5f, 0), new Quaternion(0, 90, 0, 0));
+            a.transform.parent = main.transform;
+            GameObject b;
+            b = Instantiate(options[0], new Vector3(40, -2.5f, 0), new Quaternion(0, 90, 0, 0));
+            b.transform.parent = main.transform;
+            answer = 1;
+        }
+        GameObject c;
+        c = Instantiate(obstacle, new Vector3(40, 0, 0), new Quaternion(0, 0, 0, 0));
+        c.transform.parent = main.transform;
+        count++;
     }
 }

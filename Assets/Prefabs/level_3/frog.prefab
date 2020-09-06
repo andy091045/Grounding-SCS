@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7846679622117289193}
   - component: {fileID: 8293992435377267948}
   - component: {fileID: 8385098022896508927}
+  - component: {fileID: 3160879177164844975}
   m_Layer: 0
   m_Name: frog
   m_TagString: Untagged
@@ -265,3 +266,15 @@ PolygonCollider2D:
       - {x: 4.685, y: -4.85}
       - {x: 4.625, y: -4.74}
       - {x: 4.4249997, y: -4.41}
+--- !u!114 &3160879177164844975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249433327597196751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

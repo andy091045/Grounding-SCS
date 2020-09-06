@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1690246129231394557}
   - component: {fileID: 7261644100880199266}
   - component: {fileID: 5633281347322519471}
+  - component: {fileID: -5054768546026767897}
   m_Layer: 0
   m_Name: long_cat
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2332569840600484429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -425,3 +426,15 @@ PolygonCollider2D:
       - {x: 1.93, y: -9.764999}
       - {x: 5.89, y: -9.764999}
       - {x: 5.8799996, y: -9.695}
+--- !u!114 &-5054768546026767897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332569840600484429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

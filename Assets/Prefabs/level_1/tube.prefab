@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7912999419229827442}
   - component: {fileID: 2985676870805618311}
   - component: {fileID: 8878348837835103823}
+  - component: {fileID: 4045328901736601421}
   m_Layer: 0
   m_Name: tube
   m_TagString: Untagged
@@ -278,3 +279,15 @@ PolygonCollider2D:
       - {x: 2.7, y: -1.405}
       - {x: 2.69, y: -1.415}
       - {x: 2.69, y: -1.405}
+--- !u!114 &4045328901736601421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655559327695030632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

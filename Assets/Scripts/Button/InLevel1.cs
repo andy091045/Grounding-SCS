@@ -16,7 +16,10 @@ public class InLevel1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown("W"))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
     public void OnLoginButtonClick()
     {

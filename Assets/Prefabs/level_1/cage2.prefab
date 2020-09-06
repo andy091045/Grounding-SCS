@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2551634132056338943}
   - component: {fileID: 6505372173751232250}
   - component: {fileID: 462039207252988429}
+  - component: {fileID: 4703543672431064854}
   m_Layer: 0
   m_Name: cage2
   m_TagString: Untagged
@@ -172,3 +173,15 @@ PolygonCollider2D:
       - {x: 3.895, y: -5.5099998}
       - {x: 3.905, y: -5.47}
       - {x: 4.045, y: -4.0699997}
+--- !u!114 &4703543672431064854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3546515122141094502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8583905463199938336}
   - component: {fileID: 7738649328962480754}
   - component: {fileID: 3462632886554044245}
+  - component: {fileID: 1945576569580237096}
   m_Layer: 0
   m_Name: moon
   m_TagString: Untagged
@@ -389,3 +390,15 @@ PolygonCollider2D:
       - {x: 0.305, y: -8.035}
       - {x: 0.42499998, y: -7.995}
       - {x: 0.645, y: -7.935}
+--- !u!114 &1945576569580237096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054547435789063242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

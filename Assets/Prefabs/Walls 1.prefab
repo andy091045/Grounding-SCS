@@ -45,6 +45,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467e486abb8bb974493f32cc63962a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topics:
+  - {fileID: 2762512049308795701, guid: b94420d73674dfc44884b258c237ff5c, type: 3}
+  - {fileID: 1241919979922725476, guid: 01b2862b58c979d4280d7bf9c3e2fb71, type: 3}
+  - {fileID: 9147440346682590466, guid: bf4c4dd77aab9eb4b9b79177e21feb74, type: 3}
+  - {fileID: 3415148130537711058, guid: 787a5cc93c37eb041a6191450a3ebf7d, type: 3}
+  - {fileID: 2722329356124448382, guid: 8b6ebcd89b468584d96c065b5d38b3c7, type: 3}
+  - {fileID: 3262268056494584479, guid: 65e24e15a19964a4ca2d3e1653235ae4, type: 3}
+  - {fileID: 5608236065633467707, guid: ed9cde58bd338ef4a83343d5b0ebaf10, type: 3}
+  - {fileID: 904236780340254037, guid: 1cbbddd57235c4c4aa6724b364a863ee, type: 3}
+  - {fileID: 7248725958292523126, guid: 35f908af322194f4eadedad574150e93, type: 3}
   colorPoint: {fileID: 1655918068164908381, guid: 0da2ac863b856a44aa4740e76920c3ab, type: 3}
   cage: {fileID: 1576809026402659939, guid: eb872e98ff3dde14fa1f953d4c3700c0, type: 3}
   cage2: {fileID: 3546515122141094502, guid: ec8c4d2ef10aff248aa6aa9b3dfdb2a9, type: 3}
@@ -65,12 +75,24 @@ MonoBehaviour:
   optionColor6: {fileID: 7919329282420985601, guid: 8b8910b5f5a246147ae515183a3a1a1b, type: 3}
   optionColor7: {fileID: 8616651615445975932, guid: c4543589ab65bd64ba5c5b6a456da1af, type: 3}
   optionColor8: {fileID: 8276961875643632356, guid: cdf593e45eb38fc42bd8f056bbd30faa, type: 3}
+  topic1: {fileID: 2762512049308795701, guid: b94420d73674dfc44884b258c237ff5c, type: 3}
+  topic2: {fileID: 1241919979922725476, guid: 01b2862b58c979d4280d7bf9c3e2fb71, type: 3}
+  topic3: {fileID: 9147440346682590466, guid: bf4c4dd77aab9eb4b9b79177e21feb74, type: 3}
+  topic4: {fileID: 3415148130537711058, guid: 787a5cc93c37eb041a6191450a3ebf7d, type: 3}
+  topic5: {fileID: 2722329356124448382, guid: 8b6ebcd89b468584d96c065b5d38b3c7, type: 3}
+  topic6: {fileID: 3262268056494584479, guid: 65e24e15a19964a4ca2d3e1653235ae4, type: 3}
+  topic7: {fileID: 5608236065633467707, guid: ed9cde58bd338ef4a83343d5b0ebaf10, type: 3}
+  topic8: {fileID: 904236780340254037, guid: 1cbbddd57235c4c4aa6724b364a863ee, type: 3}
+  topic9: {fileID: 7248725958292523126, guid: 35f908af322194f4eadedad574150e93, type: 3}
   main: {fileID: 8176390514710043179}
   answer: 0
   wall2: {fileID: 5456815624319120466, guid: 11d98face8e6e6d4199c2d751c9d0fb9, type: 3}
   backGround: {fileID: 5170888727670368065, guid: 5ef3ae55c2786164e9e0fb2b7c1d3f7e, type: 3}
   backGround2: {fileID: 4277490330813639463, guid: 2a1b6e87b5968284a9fa8d028a8370b0, type: 3}
   obstacle: {fileID: 8613022327790084207, guid: 4bbf978e935c91f4fb8699da84f7fecc, type: 3}
+  topic: 0
+  level: 1
+  player: {fileID: 5130238023270993846, guid: e1293b8f8c2fcea45bb3eb97759556e5, type: 3}
 --- !u!114 &8176390514710043176
 MonoBehaviour:
   m_ObjectHideFlags: 0

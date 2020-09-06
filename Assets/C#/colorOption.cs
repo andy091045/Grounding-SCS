@@ -30,11 +30,13 @@ public class colorOption : MonoBehaviour
             if (player.transform.position.y > 0)
             {
                 main.GetComponent<wall>().speed -= 1.0f;
+                Destroy(this);
                 Debug.Log("撞到正確");
             }
             else
             {
                 main.GetComponent<wall>().speed += 1.0f;
+                Destroy(this);
                 Debug.Log("撞到錯誤");
             }
         }
@@ -43,11 +45,13 @@ public class colorOption : MonoBehaviour
             if (player.transform.position.y > 0)
             {
                 main.GetComponent<wall>().speed += 1.0f;
+                Destroy(this);
                 Debug.Log("撞到錯誤");
             }
             else
             {
                 main.GetComponent<wall>().speed -= 1.0f;
+                Destroy(this);
                 Debug.Log("撞到正確");
             }
         }

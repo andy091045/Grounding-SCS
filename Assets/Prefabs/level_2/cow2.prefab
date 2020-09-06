@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6052785076515748284}
   - component: {fileID: 2896765871454410010}
   - component: {fileID: 8119490094075491016}
+  - component: {fileID: 2366611344176386627}
   m_Layer: 0
   m_Name: cow2
   m_TagString: Untagged
@@ -428,3 +429,15 @@ PolygonCollider2D:
       - {x: 4.5499997, y: -4.125}
       - {x: 4.97, y: -4.125}
       - {x: 5.0299997, y: -4.105}
+--- !u!114 &2366611344176386627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8922213001317291214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

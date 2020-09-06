@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2446661938776345558}
   - component: {fileID: 5479716967624428909}
   - component: {fileID: 5692208531086627552}
+  - component: {fileID: 693677584327878300}
   m_Layer: 0
   m_Name: colorPoint
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e773c372a38ef1d498c4d0f6edced971, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -109,3 +110,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &693677584327878300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655918068164908381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb7bf86b4b04e349a9cc54fa455771e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5130238023270993846, guid: e1293b8f8c2fcea45bb3eb97759556e5, type: 3}
+  wall: {fileID: 8176390514710043179, guid: f397ed8428b7a1c4ca55edca39d704d7, type: 3}
+  topic1: {fileID: 2762512049308795701, guid: b94420d73674dfc44884b258c237ff5c, type: 3}
+  topic2: {fileID: 1241919979922725476, guid: 01b2862b58c979d4280d7bf9c3e2fb71, type: 3}
+  topic3: {fileID: 9147440346682590466, guid: bf4c4dd77aab9eb4b9b79177e21feb74, type: 3}
+  topic4: {fileID: 3415148130537711058, guid: 787a5cc93c37eb041a6191450a3ebf7d, type: 3}
+  topic5: {fileID: 2722329356124448382, guid: 8b6ebcd89b468584d96c065b5d38b3c7, type: 3}
+  topic6: {fileID: 3262268056494584479, guid: 65e24e15a19964a4ca2d3e1653235ae4, type: 3}
+  topic7: {fileID: 5608236065633467707, guid: ed9cde58bd338ef4a83343d5b0ebaf10, type: 3}
+  topic8: {fileID: 904236780340254037, guid: 1cbbddd57235c4c4aa6724b364a863ee, type: 3}
+  topic9: {fileID: 7248725958292523126, guid: 35f908af322194f4eadedad574150e93, type: 3}

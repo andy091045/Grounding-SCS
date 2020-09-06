@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6538928324367929074}
   - component: {fileID: 4721641308438238780}
   - component: {fileID: 6868855291921011000}
+  - component: {fileID: -2015508156452070260}
   m_Layer: 0
   m_Name: fan
   m_TagString: Untagged
@@ -289,3 +290,15 @@ PolygonCollider2D:
       - {x: -4.085, y: -2.74}
       - {x: -3.885, y: -2.6699998}
       - {x: -3.355, y: -2.49}
+--- !u!114 &-2015508156452070260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246134050133919105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9440f3aa36ff6a40afb04ce551f8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
