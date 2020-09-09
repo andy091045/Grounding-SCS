@@ -35,7 +35,7 @@ public class ColorOption2 : MonoBehaviour
             }
             else
             {
-                main.GetComponent<wall>().speed += 1.0f;
+                main.GetComponent<wall>().speed += 3.0f;
                 Destroy(this.gameObject);
             }
         }
@@ -48,7 +48,7 @@ public class ColorOption2 : MonoBehaviour
             }
             else
             {
-                main.GetComponent<wall>().speed -= 1.0f;
+                main.GetComponent<wall>().speed -= 3.0f;
                 Destroy(this.gameObject);
             }
         }

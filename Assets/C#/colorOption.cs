@@ -30,12 +30,12 @@ public class colorOption : MonoBehaviour
         {
             if (player.transform.position.y > 0)
             {
-                main.GetComponent<wall>().speed -= 0.5f;
+                main.GetComponent<wall>().speed -= 1f;
                 Destroy(this.gameObject);
             }
             else
             {
-                main.GetComponent<wall>().speed += 0.5f;
+                main.GetComponent<wall>().speed += 3f;
                 Destroy(this.gameObject);
             }
         }
@@ -43,12 +43,12 @@ public class colorOption : MonoBehaviour
         {
             if (player.transform.position.y > 0)
             {
-                main.GetComponent<wall>().speed += 0.5f;
+                main.GetComponent<wall>().speed += 1f;
                 Destroy(this.gameObject);
             }
             else
             {
-                main.GetComponent<wall>().speed -= 0.5f;
+                main.GetComponent<wall>().speed -= 3f;
                 Destroy(this.gameObject);
             }
         }
