@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class colorOption : MonoBehaviour
+public class ColorOption3 : MonoBehaviour
 {
     GameObject main;
     GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        main = GameObject.Find("Walls 1");
+        main = GameObject.Find("Wall3");
         player = GameObject.Find("Player2");
     }
 
@@ -26,16 +26,16 @@ public class colorOption : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (main.GetComponent<ScenesRandom>().answer == 0)
+        if (main.GetComponent<ScenesRandomForLevel3>().answer == 0)
         {
             if (player.transform.position.y > 0)
             {
-                main.GetComponent<wall>().speed -= 0.5f;
+                main.GetComponent<wall>().speed -= 1.0f;
                 Destroy(this.gameObject);
             }
             else
             {
-                main.GetComponent<wall>().speed += 0.5f;
+                main.GetComponent<wall>().speed += 1.0f;
                 Destroy(this.gameObject);
             }
         }
@@ -43,12 +43,12 @@ public class colorOption : MonoBehaviour
         {
             if (player.transform.position.y > 0)
             {
-                main.GetComponent<wall>().speed += 0.5f;
+                main.GetComponent<wall>().speed += 1.0f;
                 Destroy(this.gameObject);
             }
             else
             {
-                main.GetComponent<wall>().speed -= 0.5f;
+                main.GetComponent<wall>().speed -= 1.0f;
                 Destroy(this.gameObject);
             }
         }

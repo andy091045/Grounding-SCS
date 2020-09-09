@@ -25,15 +25,15 @@ public class wall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time_f += Time.deltaTime;
-        time_i = (int)time_f;
+        // time_f += Time.deltaTime;
+        // time_i = (int)time_f;
 
-        if ((time_i - originTime) >= gapTime)
-        {
-            speed += 2.0f;
-            Debug.Log(speed);
-            originTime = time_i;
-        }
+        // if ((time_i - originTime) >= gapTime)
+        // {
+        //     speed += 2.0f;
+        //     Debug.Log(speed);
+        //     originTime = time_i;
+        // }
         // speed += increaseSpeed;
         // Debug.Log(speed);
         run();

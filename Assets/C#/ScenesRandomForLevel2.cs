@@ -86,20 +86,16 @@ public class ScenesRandomForLevel2 : MonoBehaviour
             {
                 Destroy(main.transform.GetChild(i).gameObject);
             }
-            childCount = GameObject.Find("Player2").transform.childCount;
-            for (int i = 0; i < childCount; i++)
-            {
-                Destroy(GameObject.Find("Player2").transform.GetChild(i).gameObject);
-            }
             if (count == 10)
             {
                 Instantiate(wall2, new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
                 Instantiate(backGround2, new Vector3(17, 0, 0), new Quaternion(0, 0, 0, 0));
                 Destroy(main);
-                Destroy(backGround);
+                Destroy(GameObject.Find("BackGround2(Clone)"));
             }
             ScenesBuild();
             x -= 70;
+            GameObject.Find("Walls2(Clone)").GetComponent<wall>().speed += 1;
         }
     }
 

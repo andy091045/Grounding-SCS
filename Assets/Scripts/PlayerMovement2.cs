@@ -20,7 +20,12 @@ public class PlayerMovement2 : MonoBehaviour
     public Rigidbody2D rigid;
 
     public float gapTime = 2;
+
     public float timer = 0;
+
+    //gapTime1 timer1是用來調音效的
+    public float gapTime1 = 0.1f;
+    public float timer1 = 0;
     int gLock = 0;
 
     void Start()
@@ -53,6 +58,15 @@ public class PlayerMovement2 : MonoBehaviour
         if (playerType == PlayerType.A)
         {
             velocity = new Vector2(0, Input.GetAxisRaw("AVertical")) * speed;
+            if (timer1 >= gapTime1)
+            {
+                if ((Input.GetAxisRaw("AVertical") == 1) || (Input.GetAxisRaw("AVertical") == -1))
+                {
+                    audiosource.PlayOneShot(impact);
+                }
+                timer1 -= gapTime1;
+            }
+
             // if (Input.GetKeyDown(KeyCode.Space))
             // {
             //     velocity = new Vector2(0, 1) * speed;
@@ -66,6 +80,7 @@ public class PlayerMovement2 : MonoBehaviour
         }
         rigid.velocity = velocity;
         timer += Time.deltaTime;
+        timer1 += Time.deltaTime;
     }
     public void Dead()
     {

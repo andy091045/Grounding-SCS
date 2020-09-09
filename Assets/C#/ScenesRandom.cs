@@ -41,6 +41,7 @@ public class ScenesRandom : MonoBehaviour
     public GameObject topic9;
     public GameObject main;
     private float x = -70;
+    private float xForTopic = -45f;
     public int answer = 0;
     System.Random ran;
     int count = 1;
@@ -92,6 +93,15 @@ public class ScenesRandom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if(main.transform.position.x < xForTopic)
+        // {
+        //     int childCount = GameObject.Find("Player2").transform.childCount;
+        //     for (int i = 0; i < childCount; i++)
+        //     {
+        //         Destroy(GameObject.Find("Player2").transform.GetChild(i).gameObject);
+        //     }
+        //     xForTopic-=70;
+        // }
         //Debug.Log(main.transform.position.x);
         if (main.transform.position.x < x)
         {
@@ -101,20 +111,21 @@ public class ScenesRandom : MonoBehaviour
             {
                 Destroy(main.transform.GetChild(i).gameObject);
             }
-            childCount = GameObject.Find("Player2").transform.childCount;
-            for (int i = 0; i < childCount; i++)
-            {
-                Destroy(GameObject.Find("Player2").transform.GetChild(i).gameObject);
-            }
+            // childCount = GameObject.Find("Player2").transform.childCount;
+            // for (int i = 0; i < childCount; i++)
+            // {
+            //     Destroy(GameObject.Find("Player2").transform.GetChild(i).gameObject);
+            // }
             if (count == 10)
             {
                 Instantiate(wall2, new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
                 Instantiate(backGround2, new Vector3(17, 0, 0), new Quaternion(0, 0, 0, 0));
                 Destroy(main);
-                Destroy(backGround);
+                Destroy(GameObject.Find("BackGround"));
             }
             ScenesBuild();
             x -= 70;
+            GameObject.Find("Walls 1").GetComponent<wall>().speed += 1;
         }
     }
 

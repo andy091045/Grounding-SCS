@@ -113,7 +113,7 @@ MonoBehaviour:
   obstacle: {fileID: 4950936247797977718, guid: 338ee047b54d93e49b45893daa26598c, type: 3}
   level: 3
   topic: 0
-  topic1: {fileID: 1451202145854939349, guid: 35a021ee83562934ebf582ec6f621d98, type: 3}
-  topic2: {fileID: 4829423874199854160, guid: 84b7ebeb3d6d4334a9afde90832ace15, type: 3}
-  topic3: {fileID: 1577311917601848779, guid: e8e100498ba459341b6f067b700a3288, type: 3}
+  topic1: {fileID: 4030435491038466665, guid: 672a5e729827c644e93603bf9bd3ac2e, type: 3}
+  topic2: {fileID: 1451220055486181562, guid: 69ed1df093b098f47b00a8cd7ed09f00, type: 3}
+  topic3: {fileID: 2530706721427769495, guid: 526e1b75db3954e4cabcb8ec1d442935, type: 3}
   player: {fileID: 5130238023270993846, guid: e1293b8f8c2fcea45bb3eb97759556e5, type: 3}

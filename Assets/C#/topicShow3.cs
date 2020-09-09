@@ -6,9 +6,6 @@ public class topicShow3 : MonoBehaviour
 {
     public GameObject player;
     public GameObject wall;
-    public GameObject topic1;
-    public GameObject topic2;
-    public GameObject topic3;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +23,9 @@ public class topicShow3 : MonoBehaviour
         //show出題目{
         if (other.gameObject.CompareTag("Player"))
         {
+            player = GameObject.Find("Player2");
             GameObject abc;
-            abc = Instantiate(GameObject.Find("Walls3").GetComponent<ScenesRandomForLevel3>().topics[GameObject.Find("Walls3").GetComponent<ScenesRandomForLevel3>().topic], new Vector3(player.transform.position.x, player.transform.position.y, 0), new Quaternion(0, 90, 0, 0));
+            abc = Instantiate(GameObject.Find("Wall3(Clone)").GetComponent<ScenesRandomForLevel3>().topics[GameObject.Find("Walls3(Clone)").GetComponent<ScenesRandomForLevel3>().topic], new Vector3(player.transform.position.x + 1f, player.transform.position.y + 1f, 0), new Quaternion(0, 90, 0, 0));
             abc.transform.parent = GameObject.Find("Player2").transform;
         }
 
